@@ -5,7 +5,7 @@ from .api import (CustomerViewSet, AddressViewSet, DeviceViewSet, ServiceOrderVi
 router = routers.DefaultRouter()
 router.register('api/customer', CustomerViewSet, 'customer')
 router.register('api/address', AddressViewSet, 'address')
-router.register('api/device', DeviceViewSet, 'invoiceposition')
+router.register('api/device', DeviceViewSet, 'device')
 router.register('api/serviceOrder', ServiceOrderViewSet, 'serviceOrder')
 
 urlpatterns = router.urls
