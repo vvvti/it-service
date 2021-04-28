@@ -9,21 +9,27 @@ class CustomerViewSet(viewsets.ModelViewSet):
     permission_classes = [
         permissions.AllowAny
     ]
+    
+    serializer_class = CustomerSerializer
 
 class DeviceViewSet(viewsets.ModelViewSet):
     queryset = Device.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
+    
+    serializer_class = DeviceSerializer
 
 class AddressViewSet(viewsets.ModelViewSet):
     queryset = Address.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
+    serializer_class = AddressSerializer
 
 class ServiceOrderViewSet(viewsets.ModelViewSet):
     queryset = ServiceOrder.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
+    serializer_class = ServiceOrderSerializer
